@@ -2,6 +2,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/WebReflection/dispatch/badge.svg?branch=main)](https://coveralls.io/github/WebReflection/dispatch?branch=main)
 
+<sup>**Social Media Photo by [Mika Baumeister](https://unsplash.com/@kommumikation) on [Unsplash](https://unsplash.com/)**</sup>
+
 Small utility to dispatch native `Event` or `CustomEvent` (when `options` includes `detail`) on an `EventTarget`. The return value is the same as `dispatchEvent`: `false` if the event was canceled, otherwise `true`.
 
 **Call shapes**
