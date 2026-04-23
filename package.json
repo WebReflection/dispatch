@@ -1,6 +1,6 @@
 {
   "name": "@webreflection/dispatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility to dispatch common events on EventTarget references or contexts",
   "main": "index.js",
   "types": "index.d.ts",
