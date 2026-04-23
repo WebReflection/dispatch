@@ -1,0 +1,49 @@
+{
+  "name": "@webreflection/dispatch",
+  "version": "0.0.0",
+  "description": "A utility to dispatch common events on EventTarget references or contexts",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "module": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./fast": {
+      "import": "./yolo.js",
+      "types": "./index.d.ts"
+    },
+    "./yolo": {
+      "import": "./yolo.js",
+      "types": "./index.d.ts"
+    },
+    "package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "yolo.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:types && npm run test",
+    "build:types": "tsc -p tsconfig.json",
+    "coverage": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
+    "test": "c8 node test.js"
+  },
+  "keywords": [
+    "EventTarget",
+    "event",
+    "dispatch",
+    "utility"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "c8": "^11.0.0",
+    "typescript": "^6.0.3"
+  }
+}
