@@ -1,4 +1,5 @@
 export default function dispatch(targetOrType) {
+  'use strict';
   let target = this ?? globalThis, length = arguments.length, type, options;
 
   if (length === 3) {

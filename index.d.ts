@@ -43,7 +43,6 @@ export default function dispatch(this: DispatchThis, type: string): boolean;
 export type Init = EventInit | CustomEventInit;
 export type Options = Init | undefined | null;
 export type DispatchThis = EventTarget | void;
-
 /**
  * Callable shape after fixing `this` with {@link Function.prototype.bind `dispatch.bind(target)`}.
  * Use for typing when you pass event `init` on a bound dispatcher — TypeScript’s `bind` inference
